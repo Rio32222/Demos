@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AttrsCustomView">
+        <attr name="background" format="reference|color"/>
+        <attr name="movingenable" format="boolean"/>
+        <attr name="mode" >
+            <flag name="circle" value="0x01" />
+            <flag name="triangle" value="0x02" />
+        </attr>
+    </declare-styleable>
+        
+</resources>
