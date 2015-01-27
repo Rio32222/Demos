@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    <com.example.cutomview.AttrsCustomView
+    <com.example.customview.AttrsCustomView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        custom:mode="circle"
+        custom:mode="middle"
         custom:movingenable="false"
+        custom:color="#f0f"
         />
 
 </LinearLayout>

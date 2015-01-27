@@ -14,15 +14,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int background=0x7f010000;
+        public static final int color=0x7f010000;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>circle</code></td><td>0x01</td><td></td></tr>
-<tr><td><code>triangle</code></td><td>0x02</td><td></td></tr>
+<tr><td><code>small</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>middle</code></td><td>0x02</td><td></td></tr>
 </table>
          */
         public static final int mode=0x7f010002;
@@ -39,10 +39,10 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int circle=0x7f040000;
         public static final int lLayout=0x7f040002;
+        public static final int middle=0x7f040001;
         public static final int rLayout=0x7f040003;
-        public static final int triangle=0x7f040001;
+        public static final int small=0x7f040000;
     }
     public static final class layout {
         public static final int activity_attrscustom=0x7f030000;
@@ -87,11 +87,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AttrsCustomView_background com.example.customview:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #AttrsCustomView_color com.example.customview:color}</code></td><td></td></tr>
            <tr><td><code>{@link #AttrsCustomView_mode com.example.customview:mode}</code></td><td></td></tr>
            <tr><td><code>{@link #AttrsCustomView_movingenable com.example.customview:movingenable}</code></td><td></td></tr>
            </table>
-           @see #AttrsCustomView_background
+           @see #AttrsCustomView_color
            @see #AttrsCustomView_mode
            @see #AttrsCustomView_movingenable
          */
@@ -99,7 +99,7 @@ containing a value of this type.
             0x7f010000, 0x7f010001, 0x7f010002
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.customview.R.attr#background}
+          <p>This symbol is the offset where the {@link com.example.customview.R.attr#color}
           attribute's value can be found in the {@link #AttrsCustomView} array.
 
 
@@ -107,9 +107,9 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.customview:background
+          @attr name com.example.customview:color
         */
-        public static final int AttrsCustomView_background = 0;
+        public static final int AttrsCustomView_color = 0;
         /**
           <p>This symbol is the offset where the {@link com.example.customview.R.attr#mode}
           attribute's value can be found in the {@link #AttrsCustomView} array.
@@ -121,8 +121,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>circle</code></td><td>0x01</td><td></td></tr>
-<tr><td><code>triangle</code></td><td>0x02</td><td></td></tr>
+<tr><td><code>small</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>middle</code></td><td>0x02</td><td></td></tr>
 </table>
           @attr name com.example.customview:mode
         */

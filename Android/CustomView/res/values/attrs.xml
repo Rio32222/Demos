@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="AttrsCustomView">
-        <attr name="background" format="reference|color"/>
+        <attr name="color" format="reference|color"/>
+        <!-- 属性为color，取值可以是color或者是引用其他的值 -->
+        
         <attr name="movingenable" format="boolean"/>
+        <!-- 属性为movingenable，只能取boolean值 -->
+        
         <attr name="mode" >
-            <flag name="circle" value="0x01" />
-            <flag name="triangle" value="0x02" />
+            <!-- 属性为mode，且只可以取两个值small 或者 middle -->
+            <flag name="small" value="0x01" />
+            <flag name="middle" value="0x02" />
         </attr>
     </declare-styleable>
-        
 </resources>

@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -27,6 +28,9 @@ public class SimpleCustomActivity extends Activity {
 
 class SimpleCustomView extends View{
 
+	public final static boolean DEBUG = true;
+	public final static String TAG = "CustomView";
+	
 	Paint p = new Paint();
 	private float currentX = 40;
 	private float currentY = 50;
@@ -34,6 +38,9 @@ class SimpleCustomView extends View{
 	public SimpleCustomView(Context context) {
 		super(context);
 		// TODO Auto-generated constructor stub
+		if(DEBUG){
+			Log.d(TAG, "SimpleCustomView(Context)");
+		}
 	}
 	
 	@Override
